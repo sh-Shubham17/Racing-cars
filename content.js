@@ -19,7 +19,7 @@ let controls = {
   moveRight: document.getElementById("move-right"),
   moveLeft: document.getElementById("move-left"),
 };
-let disableMovingButoons = true;
+let disableMovingButtons = true;
 function myMove() {
   createCarObjects();
   let speed = document.getElementById("choice").value;
@@ -192,12 +192,12 @@ function disableEnableMovers(action) {
   if (action == "disable") {
     moveRight.disabled = true;
     moveLeft.disabled = true;
-    disableMovingButoons = true;
+    disableMovingButtons = true;
   } else if (action == "enable") {
     moveRight.disabled = false;
     moveLeft.disabled = false;
     console.log("enabled");
-    disableMovingButoons = false;
+    disableMovingButtons = false;
   }
 }
 function hideOrShowMovers(action) {
@@ -222,7 +222,7 @@ function disableEnableModeControlers(action) {
 }
 let moveId;
 function accelerateCar(direction) {
-  if (!disableMovingButoons) {
+  if (!disableMovingButtons) {
     moveId = setInterval(moveManualCar, 10, direction);
   }
 }
