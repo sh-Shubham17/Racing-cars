@@ -299,13 +299,14 @@ i {
     top: 94%;
   }
   .Controler-buttons {
-    width: 45vw;
+    padding : 1vw 0 2vw 0;
+    width: 40vw;
     height: 5.5%;
   }
   #automatic,
   #manual {
     padding: 1vw;
-    font-size: 5vw;
+    font-size: 4vw;
   }
   #instruction {
     top: 50%;
