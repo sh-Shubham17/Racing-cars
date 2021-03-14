@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choose cars</title>
+    <link rel="stylesheet"  href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<body>
+  <h1><u>Select any 3 cars</u></h1>
+  
+  <a id="button2" ><i class="fas fa-volume-mute" aria-hidden="true"></i></a>
+  <form action="load-race.html" >
+  <button id="button" type="submit" onclick="handleSubmit()" disabled >Race Track</button>
+  <div class="grid-two imageandtext">
+    <div class="imageandtext image_grid container">
+      <label for="car1">
+        <img src="./cars/lamborghini-aventador-1.png" class="img-thumbnail">
+      </label>
+      <input  type="checkbox" id="car1" value="./cars/lamborghini-aventador-2.png" onclick="storeValue(value,id)">
+      <div class="caption">
+        <p></p>
+      </div>
+    </div>
+    <div class="imageandtext image_grid">
+      <label for="car6">
+        <img src="./cars/formula1car -1.png" class="img-thumbnail">
+      </label>
+      <input  type="checkbox" id="car6" value="./cars/formula1car -2.png" onclick="storeValue(value,id)">
+      <div class="caption">
+      </div>
+    </div> 
+    <div class="imageandtext image_grid">
+      <label for="car4">
+          <img src="./cars/blue ferrari-1.png" class="img-thumbnail">
+        </label>
+        <input " type="checkbox" id="car4" value="./cars/blue ferrari-2.png" onclick="storeValue(value,id)">
+        <div class="caption">
+          <p></p>
+        </div>
+      </div>                  
+    <div class="imageandtext image_grid">
+      <label for="car2">
+        <img src="./cars/lamborghini terzo millennio-1.png" class="img-thumbnail">
+      </label>
+      <input  type="checkbox"  id="car2" value="./cars/lamborghini terzo millennio-2.png" onclick="storeValue(value,id)">
+      <div class="caption">
+        <p></p>
+      </div>
+    </div>
+    <div class="imageandtext image_grid">
+    <label for="car3">
+      <img src="./cars/red ferrari-1.png" class="img-thumbnail" />
+      </label>
+      <input  type="checkbox" id="car3" value = "./cars/red ferrari-2.png" onclick="storeValue(value,id)">
+      <div class="caption">
+        <p></p>
+      </div>
+    </div>
+    <div class="imageandtext image_grid">
+      <label for="car5">
+        <img src="./cars/sports car-1.png" class="img-thumbnail">
+      </label>
+      <input  type="checkbox" id="car5" value="./cars/sports car-2.png" onclick="storeValue(value,id)">
+      <div class="caption">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</form> 
+<audio loop id="Background-music" style="width:0px ; height: 0px;" src="./cars/Background-music.mp3" type="audio/mp3">
+</audio>
+  <script type="text/javascript" src= "store.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  background: rgb(246, 241, 241);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(246, 241, 241, 1) 2%,
+    rgba(4, 33, 237, 1) 15%,
+    rgba(13, 31, 148, 1) 22%,
+    rgba(224, 224, 236, 1) 29%,
+    rgba(93, 59, 172, 1) 30%,
+    rgba(93, 44, 161, 1) 36%,
+    rgba(35, 38, 240, 1) 45%,
+    rgba(18, 48, 231, 1) 58%,
+    rgba(224, 224, 236, 1) 67%,
+    rgba(93, 59, 172, 1) 68%,
+    rgba(23, 0, 232, 1) 78%,
+    rgba(3, 20, 128, 1) 90%,
+    rgba(2, 2, 11, 1) 96%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(246, 241, 241, 1) 2%,
+    rgba(4, 33, 237, 1) 15%,
+    rgba(13, 31, 148, 1) 22%,
+    rgba(224, 224, 236, 1) 29%,
+    rgba(93, 59, 172, 1) 30%,
+    rgba(93, 44, 161, 1) 36%,
+    rgba(35, 38, 240, 1) 45%,
+    rgba(18, 48, 231, 1) 58%,
+    rgba(224, 224, 236, 1) 67%,
+    rgba(93, 59, 172, 1) 68%,
+    rgba(23, 0, 232, 1) 78%,
+    rgba(3, 20, 128, 1) 90%,
+    rgba(2, 2, 11, 1) 96%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(246, 241, 241, 1) 2%,
+    rgba(4, 33, 237, 1) 15%,
+    rgba(13, 31, 148, 1) 22%,
+    rgba(224, 224, 236, 1) 29%,
+    rgba(93, 59, 172, 1) 30%,
+    rgba(93, 44, 161, 1) 36%,
+    rgba(35, 38, 240, 1) 45%,
+    rgba(18, 48, 231, 1) 58%,
+    rgba(224, 224, 236, 1) 67%,
+    rgba(93, 59, 172, 1) 68%,
+    rgba(23, 0, 232, 1) 78%,
+    rgba(3, 20, 128, 1) 90%,
+    rgba(2, 2, 11, 1) 96%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6f1f1",endColorstr="#02020b",GradientType=1);
+  color: rgb(245, 81, 21);
+  font-family: "Reggae One", cursive;
+}
+.h1 {
+  position: absolute;
+}
+#button {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(245, 81, 21);
+  text-decoration: none;
+  font-size: larger;
+
+  font-weight: bold;
+  background-color: rgb(192, 243, 5);
+  opacity: 0.6;
+}
+form {
+  margin: 20px;
+}
+#button2 {
+  background-color: blueviolet;
+  padding: 10px;
+  position: sticky;
+  left: 10px;
+}
+i {
+  font-size: 25px;
+}
+
+.caption {
+  position: absolute;
+  top: 0px;
+  height: 73%;
+  width: 93%; /*calc(90% - 5px)  changed to match image_grid padding  */
+  padding: 0 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+/* .caption p {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Myriad Pro regular";
+  font-size: 15.31px;
+} */
+.imageandtext {
+  position: relative;
+  overflow: hidden;
+}
+.image_grid {
+  display: inline-block;
+  padding-left: 0px;
+  height: auto;
+}
+.image_grid img {
+  /*  added rule  */
+  display: block;
+}
+
+.image_grid input {
+  display: none;
+}
+.image_grid input:checked + .caption {
+  background: rgba(0, 0, 0, 0.5);
+}
+.image_grid input:checked + .caption::after {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  line-height: 80px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+img {
+  width: 90%;
+  border: 5px solid rgb(61, 4, 94);
+  height: auto;
+  border: 8px solid black;
+}
+.image_grid img:hover + .caption {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 780px) {
+  .grid-two {
+    left: -25px;
+  }
+  /* #button {
+    position: sticky;
+    left: 20px;
+  } */
+}
