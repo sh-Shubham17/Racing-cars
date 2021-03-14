@@ -112,7 +112,7 @@ function hasRacefinished(id, maxwidth) {
     document.getElementById("startsIn").innerHTML = "stop";
     trafficLights.greenLight.style.background = "#111";
     trafficLights.redLight.style.background = "red";
-    console.log("interval closed");
+
     disableEnableMovers("disable");
     disableEnableModeControlers("enable");
     return;
@@ -140,7 +140,7 @@ function chooseMode(flag) {
   if (manualMode) {
     automatic.style.opacity = "0.5";
     manual.style.opacity = "1";
-    console.log("show");
+
     hideOrShowMovers("show");
   } else {
     automatic.style.opacity = "1";
@@ -196,7 +196,6 @@ function disableEnableMovers(action) {
   } else if (action == "enable") {
     moveRight.disabled = false;
     moveLeft.disabled = false;
-    console.log("enabled");
     disableMovingButtons = false;
   }
 }
@@ -255,6 +254,6 @@ function moveManualCar(direction) {
 function stopCar() {
   sound2.pause();
   clearInterval(moveId);
-  console.log("stoping car1...");
-  console.log("stoped car1...");
+  //console.log("stoping car1...");
+  //console.log("stoped car1...");
 }
