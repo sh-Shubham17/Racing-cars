@@ -1,6 +1,6 @@
 # Car-Racing
-
 this application is based on simple Javascript based car racing
+
 ## how to play ? 
  <ol>
   <li>click : <a href="https://shekhar17-sketch.github.io/Racing-cars/">play </a> </li>
@@ -17,9 +17,11 @@ this application is based on simple Javascript based car racing
         <li>Manual mode : 1st choosen car by u will be ur car , controlers to move ahead and back will pop up near bottom of display </li>
       </ol> 
     </li>
-    <li>traffic lights which changes traffic light dynamically</li>
-      
+     <li>traffic lights which changes traffic light dynamically</li>
     </ul>
   </li>
   <li>race till finish line </li>
 </ol>
+
+## request 
+please try to play in desktop for better experience
